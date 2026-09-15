@@ -36,7 +36,7 @@ function App() {
       <h3>El mejor país de Chile</h3>
 
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="C:\Users\danip\Documents\GitHub\Turismo_DD\app\public" />
+      <Card.Img variant="top" type="image/webp" href="/Santiago Destino.webp" />
       <Card.Body>
         <Card.Title>Santiago</Card.Title>
         <Card.Text>
