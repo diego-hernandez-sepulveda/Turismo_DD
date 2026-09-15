@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="p-5">
       <h1>Hola Mundo prueba </h1>
+      <h2>Hola Mundo 2.0</h2>
       <Button variant="primary">Boton a color</Button>
     </div>
   );
