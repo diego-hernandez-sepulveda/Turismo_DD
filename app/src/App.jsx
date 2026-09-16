@@ -5,8 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function App() {
   return (
@@ -38,15 +37,8 @@ function App() {
       <h1>ChileTurist</h1>
       <h3>El mejor país de Chile</h3>
 
-      <Card>
-        <Card.Body>Nuestros servicios solo ofrecen </Card.Body>
-      </Card>
-
-    
-    <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
-        <Col key={idx}>
-          <Card style={{ width: '40rem' }}>
+    <CardGroup>
+      <Card style={{ width: '40rem' }}>
       <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
       <Card.Body>
         <Card.Title>Santiago</Card.Title>
@@ -113,10 +105,7 @@ function App() {
     </Accordion>
       </Card.Body>
     </Card>
-
-        </Col>
-      ))}
-    </Row>
+    </CardGroup>
 
     </div>
   );
