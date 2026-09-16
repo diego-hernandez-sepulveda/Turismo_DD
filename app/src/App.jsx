@@ -85,19 +85,19 @@ function App() {
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header>Plaza Sotomayor</Accordion.Header>
         <Accordion.Body>
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>Cerro Alegre</Accordion.Header>
         <Accordion.Body>
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>Palacio Baburizza</Accordion.Header>
         <Accordion.Body>
           Descripción
         </Accordion.Body>
