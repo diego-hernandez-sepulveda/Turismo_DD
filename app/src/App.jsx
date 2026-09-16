@@ -49,7 +49,7 @@ function App() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Palacio de La Moneda</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/palaciodelamoneda.jpg" />
+          <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" />
           El palacio...
           
         </Accordion.Body>
