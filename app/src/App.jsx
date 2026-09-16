@@ -77,7 +77,7 @@ function App() {
     </Card>
 
     <Card style={{ width: '40rem' }}>
-      <Card.Img variant="top" type="image/webp" src="/Destino Valparaíso.webp" />
+      <Card.Img variant="top" type="image/webp" src="/Valparaiso.webp" />
       <Card.Body>
         <Card.Title>Valparaíso</Card.Title>
         <Card.Text>
@@ -87,18 +87,21 @@ function App() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Plaza Sotomayor</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Cerro Alegre</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Palacio Baburizza</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
