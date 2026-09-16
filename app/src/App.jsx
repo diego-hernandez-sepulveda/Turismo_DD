@@ -115,15 +115,15 @@ function App() {
 
     <CardGroup>
       <Card style={{ width: '40rem' }}>
-      <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
+      <Card.Img variant="top" type="image/webp" src="/Destino La Serena.webp" />
       <Card.Body>
-        <Card.Title>Santiago</Card.Title>
+        <Card.Title>La Serena</Card.Title>
         <Card.Text>
           Descripción de Santiago o algo así
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Palacio de La Moneda</Accordion.Header>
+        <Accordion.Header>Faro La Serena</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" />
           El palacio...
@@ -131,14 +131,14 @@ function App() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Parque Bicentenario de Vitacura</Accordion.Header>
+        <Accordion.Header>La Recova</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Museo Nacional de Bellas Artes</Accordion.Header>
+        <Accordion.Header>Jardín Japonés La Serena</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" />
           Descripción
