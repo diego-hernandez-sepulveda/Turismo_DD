@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function App() {
   return (
