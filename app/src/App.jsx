@@ -40,7 +40,11 @@ function App() {
         <Card.Body>Nuestros servicios solo ofrecen </Card.Body>
       </Card>
 
-      <Card style={{ width: '40rem' }}>
+    
+    <Row xs={1} md={2} className="g-4">
+      {Array.from({ length: 4 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card style={{ width: '40rem' }}>
       <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
       <Card.Body>
         <Card.Title>Santiago</Card.Title>
@@ -107,6 +111,10 @@ function App() {
     </Accordion>
       </Card.Body>
     </Card>
+
+        </Col>
+      ))}
+    </Row>
 
     </div>
   );
