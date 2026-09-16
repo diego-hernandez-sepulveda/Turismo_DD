@@ -57,18 +57,21 @@ function App() {
       <Accordion.Item eventKey="1">
         <Accordion.Header>Parque Bicentenario de Vitacura</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Museo Nacional de Bellas Artes</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>Cerro San Cristóbal</Accordion.Header>
         <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/Santiago cerrosancristobal.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
