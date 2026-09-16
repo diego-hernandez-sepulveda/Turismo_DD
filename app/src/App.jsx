@@ -191,39 +191,32 @@ function App() {
 
     <CardGroup>
       <Card style={{ width: '40rem' }}>
-      <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
+      <Card.Img variant="top" type="image/jpg" src="/Valdivia.jpg" />
       <Card.Body>
-        <Card.Title>Santiago</Card.Title>
+        <Card.Title>Valdivia</Card.Title>
         <Card.Text>
-          Descripción de Santiago o algo así
+          Descripción de Valdivia o algo así
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Palacio de La Moneda</Accordion.Header>
+        <Accordion.Header>Costanera de Valdivia</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" />
-          El palacio...
+          <Card.Img variant="top" type="image/jpg" src="/Valdivia costanera.jpg" />
+          La costanera...
           
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Parque Bicentenario de Vitacura</Accordion.Header>
+        <Accordion.Header>Museo Histórico y Antropológico Maurice van de Maele</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" />
+          <Card.Img variant="top" type="image/jpg" src="/Valdivia museo.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Museo Nacional de Bellas Artes</Accordion.Header>
+        <Accordion.Header>Parque Oncol</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" />
-          Descripción
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Cerro San Cristóbal</Accordion.Header>
-        <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Santiago cerrosancristobal.jpg" />
+          <Card.Img variant="top" type="image/jpeg" src="/Valdivia parque.jpeg" /> 
           Descripción
         </Accordion.Body>
       </Accordion.Item>
@@ -232,17 +225,17 @@ function App() {
     </Card>
 
     <Card style={{ width: '40rem' }}>
-      <Card.Img variant="top" type="image/webp" src="/Valparaiso.webp" />
+      <Card.Img variant="top" type="image/webp" src="/Punta Arenas.webp" />
       <Card.Body>
-        <Card.Title>Valparaíso</Card.Title>
+        <Card.Title>Punta Arenas</Card.Title>
         <Card.Text>
-          Descripción de Valparaíso o algo así
+          Descripción de Punta Arenas o algo así
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Plaza Sotomayor</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" />
+           <Card.Img type="image/jpg" src="/Valparaiso plazasotomayor.jpg" rounded />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
