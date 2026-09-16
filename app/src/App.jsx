@@ -32,15 +32,58 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
       <h1>ChileTurist</h1>
       <h3>El mejor país de Chile</h3>
 
-      <Card style={{ width: '18rem' }}>
+      <Card>
+        <Card.Body>Nuestros servicios solo ofrecen </Card.Body>
+      </Card>
+
+      <Card style={{ width: '40rem' }}>
       <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
       <Card.Body>
         <Card.Title>Santiago</Card.Title>
         <Card.Text>
           Descripción de Santiago o algo así
+        </Card.Text>
+        <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Palacio de La Moneda</Accordion.Header>
+        <Accordion.Body>
+          <Card.Img variant="top" type="image/jpg" src="/palaciodelamoneda.jpg" />
+          El palacio...
+          
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Parque Bicentenario de Vitacura</Accordion.Header>
+        <Accordion.Body>
+          Descripción
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Museo Nacional de Bellas Artes</Accordion.Header>
+        <Accordion.Body>
+          Descripción
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>Cerro San Cristóbal</Accordion.Header>
+        <Accordion.Body>
+          Descripción
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '40rem' }}>
+      <Card.Img variant="top" type="image/webp" src="/Destino Valparaíso.webp" />
+      <Card.Body>
+        <Card.Title>Valparaíso</Card.Title>
+        <Card.Text>
+          Descripción de Valparaíso o algo así
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -50,6 +93,12 @@ function App() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Descripción
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Accordion Item #2</Accordion.Header>
         <Accordion.Body>
           Descripción
