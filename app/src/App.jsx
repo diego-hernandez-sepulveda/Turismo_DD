@@ -247,9 +247,9 @@ function App() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Mirador Cerro de la Cruz</Accordion.Header>
+        <Accordion.Header>Cementerio Municipal Sara Braun</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" />
+          <Card.Img variant="top" type="image/jpg" src="/Punta Arenas cementerio.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
