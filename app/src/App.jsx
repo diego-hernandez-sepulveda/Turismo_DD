@@ -233,21 +233,21 @@ function App() {
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Plaza Sotomayor</Accordion.Header>
+        <Accordion.Header>Plaza de Armas Muñoz Gamero</Accordion.Header>
         <Accordion.Body>
-           <Card.Img type="image/jpg" src="/Valparaiso plazasotomayor.jpg" rounded />
+           <Card.Img type="image/jpg" src="/Punta Arenas plazadearmas.jpg" rounded />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Cerro Alegre</Accordion.Header>
+        <Accordion.Header>Museo Nao Victoria</Accordion.Header>
         <Accordion.Body>
-          <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" />
+          <Card.Img variant="top" type="image/jpg" src="/Punta Arenas museo.jpg" />
           Descripción
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Palacio Baburizza</Accordion.Header>
+        <Accordion.Header>Mirador Cerro de la Cruz</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" />
           Descripción
