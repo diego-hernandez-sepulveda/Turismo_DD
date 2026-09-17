@@ -84,28 +84,28 @@ function App() {
       <Card.Body>
         <Card.Title>Valparaíso</Card.Title>
         <Card.Text>
-          Descripción de Valparaíso o algo así
+         Conocida como la "Joya del Pacífico" y declarada Patrimonio de la Humanidad por la UNESCO, Valparaíso es un anfiteatro natural frente al mar famoso por su arquitectura en pendiente, ascensores históricos y coloridos murales. Una ciudad artistica y marítima que invita a perderse caminando por sus callejones y escaleras llenas de historia y arte urbano.
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Plaza Sotomayor</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" />
-          Descripción
+          El corazón cívico e histórico de la ciudad. Rodeada de imponentes edificios patrimoniales como el de la Comandancia en Jefe de la Armada, alberga el Monumento a los Héroes de Iquique y funciona como el umbral directo al movimiento portuario del Muelle Prat.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Cerro Alegre</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" />
-          Descripción
+         Uno de los cerros más emblemáticos y visitados. Se distingue por su arquitectura de influencia europea del siglo XIX, cafés de especialidad, galerías de arte, pasajes adoquinados y murales en cada esquina con vistas privilegiadas a la bahía.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Palacio Baburizza</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" />
-          Descripción
+         Antigua residencia modernista construida en 1916 en el Cerro Alegre (frente al Paseo Yugoslavo), hoy sede del Museo Municipal de Bellas Artes. Destaca tanto por su arquitectura y torre mirador como por su valiosa colección de pintura chilena y europea.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
