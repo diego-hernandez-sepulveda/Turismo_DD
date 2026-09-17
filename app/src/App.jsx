@@ -195,14 +195,14 @@ function App() {
       <Card.Body>
         <Card.Title>Valdivia</Card.Title>
         <Card.Text>
-          Descripción de Valdivia o algo así
+          Conocida como la "Perla del Sur", Valdivia es una de las ciudades más hermosas y antiguas de Chile. Rodeada por una red de ríos navegables y la imponente selva valdiviana, esta ciudad destaca por su rica herencia cultural, su marcada arquitectura de influencia alemana y su inigualable tradición cervecera. Es un destino mágico donde la naturaleza vibrante y la historia convergen en cada rincón.
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Costanera de Valdivia</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valdivia costanera.jpg" />
-          La costanera...
+          El paseo imperdible por excelencia. Bordeando los ríos Calle-Calle y Valdivia, esta extensa ruta peatonal ofrece vistas panorámicas, paseos fluviales y un ambiente relajado. Aquí encontrarás el colorido y tradicional Mercado Fluvial, resguardado por los icónicos lobos marinos que descansan al sol.
           
         </Accordion.Body>
       </Accordion.Item>
@@ -210,14 +210,14 @@ function App() {
         <Accordion.Header>Museo Histórico y Antropológico Maurice van de Maele</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Valdivia museo.jpg" />
-          Descripción
+         Ubicado en la pintoresca Isla Teja, al interior de la patrimonial Casa Anwandter, este museo es un verdadero viaje en el tiempo. Sus colecciones permiten sumergirse en la historia de la región, abarcando desde el profundo legado de las culturas mapuche y huilliche hasta el impacto de la colonización europea.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Parque Oncol</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpeg" src="/Valdivia parque.jpeg" /> 
-          Descripción
+         Un santuario natural de biodiversidad ubicado en la cordillera de la Costa. Este parque es el refugio perfecto para los amantes del trekking y la Selva Valdiviana. Sus senderos rodeados de árboles milenarios conducen a impresionantes miradores desde donde se puede contemplar el Océano Pacífico y, en días despejados, la línea de los volcanes de los Andes.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -229,28 +229,28 @@ function App() {
       <Card.Body>
         <Card.Title>Punta Arenas</Card.Title>
         <Card.Text>
-          Descripción de Punta Arenas o algo así
+         Conocida como la «Capital de la Patagonia Chilena» y la principal puerta de entrada al continente antártico. Ubicada a orillas del mítico Estrecho de Magallanes, esta ciudad austral cautiva con su rica historia de grandes exploradores, su elegante arquitectura heredada de la época del auge ganadero y su inconfundible viento. Es un destino fascinante donde verdaderamente se siente la magia del fin del mundo.
         </Card.Text>
         <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Plaza de Armas Muñoz Gamero</Accordion.Header>
         <Accordion.Body>
            <Card.Img type="image/jpg" src="/Punta Arenas plazadearmas.jpg" rounded />
-          Descripción
+          El núcleo histórico y social de la ciudad. Está rodeada de imponentes palacios de estilo europeo y centenarios árboles. En su centro se alza el imponente monumento a Hernando de Magallanes; la leyenda local asegura que debes tocar el dedo del indígena Aónikenk en su base si quieres volver a la ciudad en el futuro.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Museo Nao Victoria</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Punta Arenas museo.jpg" />
-          Descripción
+          Una experiencia histórica interactiva a orillas del estrecho. Este museo exhibe réplicas a escala real de embarcaciones legendarias que marcaron la historia de la región, destacando la Nao Victoria, la nave de la expedición de Magallanes que logró completar la primera vuelta al mundo. Ideal para sentirse un explorador del siglo XVI.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Cementerio Municipal Sara Braun</Accordion.Header>
         <Accordion.Body>
           <Card.Img variant="top" type="image/jpg" src="/Punta Arenas cementerio.jpg" />
-          Descripción
+          Reconocido internacionalmente como uno de los cementerios más hermosos del mundo y declarado Monumento Nacional. Destaca por sus inmaculados senderos bordeados de cipreses europeos perfectamente podados y los fastuosos mausoleos de las familias pioneras, siendo un verdadero museo arquitectónico al aire libre.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
