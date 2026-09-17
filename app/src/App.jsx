@@ -28,11 +28,11 @@ export default function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Destinos</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Buscador" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <Nav.Link href="#conocenos">Más</Nav.Link>
+              <NavDropdown title="Más servicios" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Transporte</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Guías</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Lugares Favoritos</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown>
@@ -45,7 +45,7 @@ export default function App() {
         <Row className="align-items-center">
           <Col md={6}>
             <h1>ChileTurist</h1>
-            <h3>El mejor país de Chile</h3>
+            <h3>El mejor servicio turístico de Chile</h3>
           </Col>
           <Col md={7}>
             <Form.Label className="fw-bold">Busca si está disponible:</Form.Label>
@@ -155,37 +155,36 @@ export default function App() {
 
       <CardGroup>
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
+          <Card.Img variant="top" type="image/webp" src="/Destino La Serena.webp" />
           <Card.Body>
-            <Card.Title>Santiago</Card.Title>
-            <Card.Text>Descripción de Santiago o algo así</Card.Text>
+            <Card.Title>La Serena</Card.Title>
+              <Card.Text>
+                La Serena, la ciudad colonial, ubicada en la costa de la provincia del Elqui 
+                conocida por sus extensas playas de blanca arena, es la capital de la región de Coquimbo 
+                y uno de los principales centros urbanos y turísticos del norte chico de Chile.
+              </Card.Text>                
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
-                <Accordion.Header>Palacio de La Moneda</Accordion.Header>
+                <Accordion.Header>Faro La Serena</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" />
-                  El palacio...
+                <Card.Img variant="top" type="image/jpg" src="/La Serena elfaro.jpg" />
+                  El emblemático Faro de La Serena se ubica en la playa que lleva su mismo nombre...
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>Parque Bicentenario de Vitacura</Accordion.Header>
+                <Accordion.Header>La Recova</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" />
-                  Descripción
+                  <Card.Img variant="top" type="image/webp" src="/La Serena larecova.webp" />
+                  La Recova es uno de los puntos más icónicos de la ciudad, se trata del mercado municipal,
+                  fundado en 1758, este lugar alberga todo tipo de productos locales, desde joyería y cerámica
+                  hasta gastronomía típica. 
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>Museo Nacional de Bellas Artes</Accordion.Header>
+                <Accordion.Header>Jardín Japonés La Serena</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" />
-                  Descripción
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>Cerro San Cristóbal</Accordion.Header>
-                <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago cerrosancristobal.jpg" />
-                  Descripción
+                  <Card.Img variant="top" type="image/webp" src="/La Serena jardinjapones.webp" />
+                  El jardín...
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
@@ -193,29 +192,29 @@ export default function App() {
         </Card>
 
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Valparaiso.webp" />
+          <Card.Img variant="top" type="image/jpeg" src="/Destino Pucón.jpeg" />
           <Card.Body>
-            <Card.Title>Valparaíso</Card.Title>
-            <Card.Text>Descripción de Valparaíso o algo así</Card.Text>
+            <Card.Title>Pucón</Card.Title>
+            <Card.Text>Descripción de Pucón o algo así</Card.Text>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
-                <Accordion.Header>Plaza Sotomayor</Accordion.Header>
+                <Accordion.Header>Plaza de Aramas de Pucón</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón plazadearmas.jpg" />
                   Descripción
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>Cerro Alegre</Accordion.Header>
+                <Accordion.Header>Parque Ojos del Caburgua</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón parqueojosdelcaburgua.jpg" />
                   Descripción
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>Palacio Baburizza</Accordion.Header>
+                <Accordion.Header>Parque Nacional Huerquehue</Accordion.Header>
                 <Accordion.Body>
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón parquenacionalhuerquehue.jpg" />
                   Descripción
                 </Accordion.Body>
               </Accordion.Item>
@@ -230,7 +229,7 @@ export default function App() {
           <Card.Body>
             <Card.Title>Valdivia</Card.Title>
             <Card.Text>
-                 Conocida como la "Perla del Sur", Valdivia es una de las ciudades más hermosas y 
+                Conocida como la "Perla del Sur", Valdivia es una de las ciudades más hermosas y 
                 antiguas de Chile. Rodeada por una red de ríos navegables y la imponente selva valdiviana, 
                 esta ciudad destaca por su rica herencia cultural, su marcada arquitectura de influencia 
                 alemana y su inigualable tradición cervecera. Es un destino mágico donde la naturaleza 
@@ -318,6 +317,12 @@ export default function App() {
         </Card>
       </CardGroup>
 
+      <Card>
+        <h3>
+          ¿Ya sabes a donde ir?
+          <Button variant="dark">Quiero ver mi itinerario</Button>
+        </h3>
+      </Card>
     </div>
   );
 }
