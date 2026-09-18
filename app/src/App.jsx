@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -11,11 +12,6 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function DestinoElegido() {
-  const [destino, elegirDestino] = useState(" ");
-
-  return (a)
-}
 
 export default function App() {
   
@@ -24,6 +20,8 @@ export default function App() {
   const lugaresEnLaPagina = ['santiago', 'valparaíso', 'valparaiso', 'valdivia', 'punta arenas', 'palacio de la moneda', 'parque bicentenario de vitacura', 'museo nacional de bellas artes', 'cerro san cristóbal', 'plaza sotomayor', 'cerro alegre', 'palacio baburizza', 'costanera de valdivia', 'museo historico y antropologico maurice van de maele', 'parque oncol', 'plaza de armas muñoz gamero', 'museo nao victoria', 'cementerio municipal sara braun'];
   
   const lugarExiste = lugaresEnLaPagina.includes(busqueda.toLowerCase().trim());
+
+  const [destino, elegirDestino] = useState("...");
 
   return (
     <div className="p-5">
@@ -101,7 +99,7 @@ export default function App() {
                     También alberga la Secretaría General de la Presidencia y a la Secretaría General 
                     de Gobierno.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Santiago")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -121,7 +119,7 @@ export default function App() {
                     un espacio cultural con esculturas de destacados artistas nacionales, juegos infantiles 
                     y senderos con miradores para disfrutar al aire libre.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Santiago")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -140,7 +138,7 @@ export default function App() {
                     en aquel entonces se le conocía como el Museo Nacional de Pinturas, es el primer 
                     museo de arte en Latinoamérica.​
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Santiago")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -159,7 +157,7 @@ export default function App() {
                     pueden encontrar áreas recreativas, paseo en funicular, el zoológico nacional de 
                     Santiago y su mayor atractivo, el santuario de la Virgen.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Santiago")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -193,7 +191,7 @@ export default function App() {
                     los Héroes de Iquique y funciona como el umbral directo al movimiento portuario del 
                     Muelle Prat. 
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valparaíso")}>Quiero ir</Button>
                   </Col>
                   </Row>            
                 </Accordion.Body>
@@ -211,7 +209,7 @@ export default function App() {
                     influencia europea del siglo XIX, cafés de especialidad, galerías de arte, pasajes 
                     adoquinados y murales en cada esquina con vistas privilegiadas a la bahía.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valparaíso")}>Quiero ir</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -229,7 +227,7 @@ export default function App() {
                     Yugoslavo), hoy sede del Museo Municipal de Bellas Artes. Destaca tanto por su 
                     arquitectura y torre mirador como por su valiosa colección de pintura chilena y europea.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valparaíso")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -261,7 +259,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     El emblemático Faro de La Serena se ubica en la playa que lleva su mismo nombre...
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("La Serena")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -279,7 +277,7 @@ export default function App() {
                   fundado en 1758, este lugar alberga todo tipo de productos locales, desde joyería y cerámica
                   hasta gastronomía típica.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary"  onClick={() => elegirDestino("La Serena")}>Quiero ir</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -295,7 +293,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("La Serena")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -519,7 +517,9 @@ export default function App() {
           </h3>
           <Card.Text className="mb-1">
             Revisa tu itinerario, puedes hacer los cambios que desees antes de confirmar.
-            Quiro ir a {destino}
+          </Card.Text>
+          <Card.Text>
+            Quiero ir a {destino}
           </Card.Text>        
         </Col>
         <Col md={8}>
