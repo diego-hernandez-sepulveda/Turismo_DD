@@ -11,6 +11,12 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+function DestinoElegido() {
+  const [destino, elegirDestino] = useState(" ");
+
+  return (a)
+}
+
 export default function App() {
   
   const [busqueda, setBusqueda] = useState('');
@@ -509,10 +515,11 @@ export default function App() {
       <Row className="align-items-center">
         <Col>
           <h3>
-            ¿Ya sabes a donde ir?
+            ¿Ya sabes a donde ir? 
           </h3>
           <Card.Text className="mb-1">
             Revisa tu itinerario, puedes hacer los cambios que desees antes de confirmar.
+            Quiro ir a {destino}
           </Card.Text>        
         </Col>
         <Col md={8}>
