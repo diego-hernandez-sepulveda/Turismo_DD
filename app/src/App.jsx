@@ -75,7 +75,11 @@ export default function App() {
           <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" />
           <Card.Body>
             <Card.Title>Santiago</Card.Title>
-            <Card.Text>Descripción de Santiago o algo así</Card.Text>
+            <Card.Text>
+              Santiago, la capital y la ciudad más grande de Chile, está ubicada en un valle rodeado
+              por la nevada cordillera de los Andes y la Cordillera de la Costa. La ciudad alberga 
+              los principales organismos públicos, comerciales, culturales y financieros del país.
+            </Card.Text>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Palacio de La Moneda</Accordion.Header>
