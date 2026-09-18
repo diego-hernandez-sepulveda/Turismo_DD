@@ -386,7 +386,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                  El paseo imperdible por excelencia. Bordeando los ríos Calle-Calle y Valdivia, esta 
+                   El paseo imperdible por excelencia. Bordeando los ríos Calle-Calle y Valdivia, esta 
                    extensa ruta peatonal ofrece vistas panorámicas, paseos fluviales y un ambiente relajado. 
                    Aquí encontrarás el colorido y tradicional Mercado Fluvial, resguardado por los icónicos 
                    lobos marinos que descansan al sol.
@@ -405,7 +405,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                  Ubicado en la pintoresca Isla Teja, al interior de la patrimonial Casa Anwandter, este 
+                   Ubicado en la pintoresca Isla Teja, al interior de la patrimonial Casa Anwandter, este 
                    museo es un verdadero viaje en el tiempo. Sus colecciones permiten sumergirse en la 
                    historia de la región, abarcando desde el profundo legado de las culturas mapuche y 
                    huilliche hasta el impacto de la colonización europea.
