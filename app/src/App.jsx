@@ -48,7 +48,7 @@ export default function App() {
             <h3>El mejor servicio turístico de Chile</h3>
           </Col>
           <Col md={7}>
-            <Form.Label className="fw-bold">Busca si está disponible:</Form.Label>
+            <Form.Label className="mb-2 text-muted">Busca si está disponible:</Form.Label>
             <Form.Control
               type="text"
               placeholder="Buscar..."
@@ -148,7 +148,10 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    Descripción
+                    Con una imponente altitud de 880 m s. n. m. El cerro San Cristóbal es el cuarto 
+                    punto más alto de Santiago y el principal pulmón verde de la ciudad. Aquí se 
+                    pueden encontrar áreas recreativas, paseo en funicular, el zoológico nacional de 
+                    Santiago y su mayor atractivo, el santuario de la Virgen.
                   </Card.Text>
                   <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
@@ -232,7 +235,7 @@ export default function App() {
 
       <CardGroup>
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Destino La Serena.webp" />
+          <Card.Img variant="top" type="image/jpg" src="/Destino La Serena.jpg" />
           <Card.Body>
             <Card.Title>La Serena</Card.Title>
               <Card.Text>
@@ -322,7 +325,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Pucón parqueojosdelcaburgua.jpg" />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón paqueojosdelcaburgua.jpg" />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -338,7 +341,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Pucón parquenacionalhuerquehue.jpg" />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón paquenacionalhuerquehue.jpg" />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -430,7 +433,7 @@ export default function App() {
         </Card>
 
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Punta Arenas.webp"/>
+          <Card.Img variant="top" type="image/jpg" src="/Punta Arenas.jpg"/>
           <Card.Body>
             <Card.Title>Punta Arenas</Card.Title>
             <Card.Text>
@@ -501,9 +504,22 @@ export default function App() {
           </Card.Body>
         </Card>
       </CardGroup>
-      <Row>
-        <Card></Card>
+      
+      <div className="mt-4 mb-5">
+      <Row className="align-items-center">
+        <Col>
+          <h3>
+            ¿Ya sabes a donde ir?
+          </h3>
+          <Card.Text className="mb-1">
+            Revisa tu itinerario, puedes hacer los cambios que desees antes de confirmar.
+          </Card.Text>        
+        </Col>
+        <Col md={8}>
+          <Button variant="outline-dark">Confirmar</Button> 
+        </Col>
       </Row>
+      </div>
 
     </div>
   );
