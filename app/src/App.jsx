@@ -95,6 +95,7 @@ export default function App() {
                     También alberga la Secretaría General de la Presidencia y a la Secretaría General 
                     de Gobierno.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -114,6 +115,7 @@ export default function App() {
                     un espacio cultural con esculturas de destacados artistas nacionales, juegos infantiles 
                     y senderos con miradores para disfrutar al aire libre.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -132,6 +134,7 @@ export default function App() {
                     en aquel entonces se le conocía como el Museo Nacional de Pinturas, es el primer 
                     museo de arte en Latinoamérica.​
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -147,6 +150,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -180,6 +184,7 @@ export default function App() {
                     los Héroes de Iquique y funciona como el umbral directo al movimiento portuario del 
                     Muelle Prat. 
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>            
                 </Accordion.Body>
@@ -197,6 +202,7 @@ export default function App() {
                     influencia europea del siglo XIX, cafés de especialidad, galerías de arte, pasajes 
                     adoquinados y murales en cada esquina con vistas privilegiadas a la bahía.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -214,6 +220,7 @@ export default function App() {
                     Yugoslavo), hoy sede del Museo Municipal de Bellas Artes. Destaca tanto por su 
                     arquitectura y torre mirador como por su valiosa colección de pintura chilena y europea.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -245,6 +252,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     El emblemático Faro de La Serena se ubica en la playa que lleva su mismo nombre...
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -262,6 +270,7 @@ export default function App() {
                   fundado en 1758, este lugar alberga todo tipo de productos locales, desde joyería y cerámica
                   hasta gastronomía típica.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -277,6 +286,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -302,6 +312,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -317,6 +328,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -332,6 +344,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -368,6 +381,7 @@ export default function App() {
                    Aquí encontrarás el colorido y tradicional Mercado Fluvial, resguardado por los icónicos 
                    lobos marinos que descansan al sol.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -386,6 +400,7 @@ export default function App() {
                    historia de la región, abarcando desde el profundo legado de las culturas mapuche y 
                    huilliche hasta el impacto de la colonización europea.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -405,6 +420,7 @@ export default function App() {
                   puede contemplar el Océano Pacífico y, en días despejados, la línea de los volcanes de los 
                   Andes.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>             
                 </Accordion.Body>
@@ -438,6 +454,7 @@ export default function App() {
                     de Magallanes; la leyenda local asegura que debes tocar el dedo del indígena Aónikenk en 
                     su base si quieres volver a la ciudad en el futuro.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -456,6 +473,7 @@ export default function App() {
                     destacando la Nao Victoria, la nave de la expedición de Magallanes que logró completar la 
                     primera vuelta al mundo. Ideal para sentirse un explorador del siglo XVI.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>                 
                 </Accordion.Body>
@@ -474,6 +492,7 @@ export default function App() {
                   bordeados de cipreses europeos perfectamente podados y los fastuosos mausoleos de las 
                   familias pioneras, siendo un verdadero museo arquitectónico al aire libre.
                   </Card.Text>
+                  <Button variant="outline-secondary">Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -482,6 +501,9 @@ export default function App() {
           </Card.Body>
         </Card>
       </CardGroup>
+      <Row>
+        <Card></Card>
+      </Row>
 
     </div>
   );
