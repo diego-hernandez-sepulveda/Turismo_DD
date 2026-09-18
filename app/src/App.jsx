@@ -257,7 +257,10 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    El emblemático Faro de La Serena se ubica en la playa que lleva su mismo nombre...
+                    El emblemático Faro de La Serena se ubica en la playa que lleva su mismo nombre en 
+                    la Avenida del Mar. La estructura se caracteriza por ser el símbolo de reconocimiento 
+                    público de la ciudad, siendo uno de los lugares turísticos más representativos y 
+                    concurridos de la zona.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => elegirDestino("La Serena")}>Quiero ir</Button>
                   </Col>
@@ -319,7 +322,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -335,7 +338,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary"  onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -351,7 +354,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Descripción
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -388,7 +391,7 @@ export default function App() {
                    Aquí encontrarás el colorido y tradicional Mercado Fluvial, resguardado por los icónicos 
                    lobos marinos que descansan al sol.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valdivia")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -407,7 +410,7 @@ export default function App() {
                    historia de la región, abarcando desde el profundo legado de las culturas mapuche y 
                    huilliche hasta el impacto de la colonización europea.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valdivia")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -427,7 +430,7 @@ export default function App() {
                   puede contemplar el Océano Pacífico y, en días despejados, la línea de los volcanes de los 
                   Andes.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Valdivia")}>Quiero ir</Button>
                   </Col>
                   </Row>             
                 </Accordion.Body>
@@ -461,7 +464,7 @@ export default function App() {
                     de Magallanes; la leyenda local asegura que debes tocar el dedo del indígena Aónikenk en 
                     su base si quieres volver a la ciudad en el futuro.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Punta Arenas")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -480,7 +483,7 @@ export default function App() {
                     destacando la Nao Victoria, la nave de la expedición de Magallanes que logró completar la 
                     primera vuelta al mundo. Ideal para sentirse un explorador del siglo XVI.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Punta Arenas")}>Quiero ir</Button>
                   </Col>
                   </Row>                 
                 </Accordion.Body>
@@ -499,7 +502,7 @@ export default function App() {
                   bordeados de cipreses europeos perfectamente podados y los fastuosos mausoleos de las 
                   familias pioneras, siendo un verdadero museo arquitectónico al aire libre.
                   </Card.Text>
-                  <Button variant="outline-secondary">Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => elegirDestino("Punta Arenas")}>Quiero ir</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
