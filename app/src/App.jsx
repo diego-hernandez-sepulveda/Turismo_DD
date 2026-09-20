@@ -294,7 +294,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    Descripción
+                    Un oasis de paz y contemplación en pleno corazón de la ciudad. Este parque temático ofrece un paisaje armónico con senderos, lagunas con carpas koi y puentes tradicionales.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => elegirDestino("La Serena")}>Quiero ir</Button>
                   </Col>
@@ -309,7 +309,7 @@ export default function App() {
           <Card.Img variant="top" type="image/jpeg" src="/Destino Pucón.jpeg" />
           <Card.Body>
             <Card.Title>Pucón</Card.Title>
-            <Card.Text>Descripción de Pucón o algo así</Card.Text>
+            <Card.Text>El epicentro indiscutido de la aventura, la naturaleza y la desconexión en el sur de Chile. Custodiado por el imponente e icónico volcán Villarrica, Pucón es un destino vibrante donde la adrenalina y el relajo convergen a la perfección.</Card.Text>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Plaza de Armas de Pucón</Accordion.Header>
@@ -320,7 +320,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    Descripción
+                    Es un verdadero jardín botánico urbano. Destaca por su cuidado paisajismo, enormes árboles que ofrecen una sombra perfecta en verano, coloridas flores y hermosas esculturas talladas en madera nativa que le dan ese inconfundible toque sureño.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
@@ -336,7 +336,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    Descripción
+                    Un espectáculo visual fascinante. Lo más impresionante es el color turquesa intenso y vibrante de sus pozones y cascadas, un tono hipnótico que resalta entre la espesura del bosque húmedo que lo rodea. Es un lugar excelente para ir en bicicleta desde Pucón, hacer un picnic en los alrededores y simplemente escuchar el sonido relajante de la corriente.
                   </Card.Text>
                   <Button variant="outline-secondary"  onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
@@ -352,7 +352,7 @@ export default function App() {
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
-                    Descripción
+                    Es el paraíso definitivo para el trekking.Su paisaje de alta montaña es sobrecogedor. A medida que subes, el bosque se transforma hasta revelarte milenarias araucarias. También puedes acampar en el sector del lago Tinquilco y desconectarte por completo del mundo.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => elegirDestino("Pucón")}>Quiero ir</Button>
                   </Col>
