@@ -29,6 +29,11 @@ export default function App() {
     }
   };
 
+  const vaciarItinerario = () => {
+    elegirDestino([]);
+  };
+
+
   return (
     <div className="p-5">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -543,6 +548,7 @@ export default function App() {
         </Col>
         <Col md={8}>
           <Button variant="outline-dark">Confirmar</Button> 
+          <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
         </Col>
       </Row>
       </div>
