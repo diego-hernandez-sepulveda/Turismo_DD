@@ -42,6 +42,11 @@ export default function App() {
     }
   };
 
+  const vaciarFavoritos = () => {
+    mostrarFavoritos([]);
+  };
+
+
   return (
     <div className="p-5">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -586,6 +591,9 @@ export default function App() {
                 {lugarFavorito}
               </li>
             ))}
+          <Col md={6}>
+            <Button variant="outline-danger" onClick={vaciarFavoritos}>Vaciar Favoritos</Button>
+          </Col>
           </ul>
         </Col>
       </Row>
