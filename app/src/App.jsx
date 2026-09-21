@@ -577,12 +577,12 @@ export default function App() {
           <Button variant="outline-dark">Confirmar</Button> 
           <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
         </Col>
-        <Col md={4}>
+        <Col md={6}>
           <h4>Lugares Favoritos❤️ :</h4>
           <p>Favoritos guardados: <strong>{favoritos.length}</strong></p>
           <ul className="list-group mb-3">
             {favoritos.map((lugarFavorito, index) => (
-              <li key={index} className="list-group-item">
+              <li key={index} className="list-group-item-warning">
                 {lugarFavorito}
               </li>
             ))}
