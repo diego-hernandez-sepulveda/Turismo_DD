@@ -34,6 +34,14 @@ export default function App() {
   };
 
 
+  const[favoritos, mostrarFavoritos] = useState([]);
+
+  const agregarFavorito = (lugarFavorito) => {
+    if (!favoritos.includes(lugarFavorito)) {
+      mostrarFavoritos([...favoritos, lugarFavorito]);
+    }
+  };
+
   return (
     <div className="p-5">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -111,6 +119,7 @@ export default function App() {
                     de Gobierno.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio de La Moneda")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Palacio de La Moneda")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -131,6 +140,7 @@ export default function App() {
                     y senderos con miradores para disfrutar al aire libre.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Bicentenario de Vitacura")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Bicentenario de Vitacura")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -150,6 +160,7 @@ export default function App() {
                     museo de arte en Latinoamérica.​
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nacional de Bellas Artes")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Nacional de Bellas Artes")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -169,6 +180,7 @@ export default function App() {
                     Santiago y su mayor atractivo, el santuario de la Virgen.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro San Cristóbal")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Cerro San Cristóbal")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -203,6 +215,7 @@ export default function App() {
                     Muelle Prat. 
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza Sotomayor")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza Sotomayor")}>❤️</Button>
                   </Col>
                   </Row>            
                 </Accordion.Body>
@@ -221,6 +234,7 @@ export default function App() {
                     adoquinados y murales en cada esquina con vistas privilegiadas a la bahía.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro Alegre")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Cerro Alegre")}>❤️</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -239,6 +253,7 @@ export default function App() {
                     arquitectura y torre mirador como por su valiosa colección de pintura chilena y europea.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio Baburizza")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Palacio Baburizza")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -274,6 +289,7 @@ export default function App() {
                     concurridos de la zona.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Faro La Serena")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Faro La Serena")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -292,6 +308,7 @@ export default function App() {
                   hasta gastronomía típica.
                   </Card.Text>
                   <Button variant="outline-secondary"  onClick={() => agregarDestino("La Recova")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("La Recova")}>❤️</Button>
                   </Col>
                   </Row> 
                 </Accordion.Body>
@@ -308,6 +325,7 @@ export default function App() {
                     Un oasis de paz y contemplación en pleno corazón de la ciudad. Este parque temático ofrece un paisaje armónico con senderos, lagunas con carpas koi y puentes tradicionales.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Jardín Japonés La Serena")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Jardín Japonés La Serena")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -334,6 +352,7 @@ export default function App() {
                     Es un verdadero jardín botánico urbano. Destaca por su cuidado paisajismo, enormes árboles que ofrecen una sombra perfecta en verano, coloridas flores y hermosas esculturas talladas en madera nativa que le dan ese inconfundible toque sureño.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas de Pucón")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza de Armas de Pucón")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -350,6 +369,7 @@ export default function App() {
                     Un espectáculo visual fascinante. Lo más impresionante es el color turquesa intenso y vibrante de sus pozones y cascadas, un tono hipnótico que resalta entre la espesura del bosque húmedo que lo rodea. Es un lugar excelente para ir en bicicleta desde Pucón, hacer un picnic en los alrededores y simplemente escuchar el sonido relajante de la corriente.
                   </Card.Text>
                   <Button variant="outline-secondary"  onClick={() => agregarDestino("Parque Ojos del Caburgua")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Ojos del Caburgua")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -366,6 +386,7 @@ export default function App() {
                     Es el paraíso definitivo para el trekking.Su paisaje de alta montaña es sobrecogedor. A medida que subes, el bosque se transforma hasta revelarte milenarias araucarias. También puedes acampar en el sector del lago Tinquilco y desconectarte por completo del mundo.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Nacional Huerquehue")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Nacional Huerquehue")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -403,6 +424,7 @@ export default function App() {
                    lobos marinos que descansan al sol.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Costanera de Valdivia")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Costanera de Valdivia")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -422,6 +444,7 @@ export default function App() {
                    huilliche hasta el impacto de la colonización europea.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Histórico y Antropológico Maurice van de Maele")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Histórico y Antropológico Maurice van de Maele")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -442,6 +465,7 @@ export default function App() {
                   Andes.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Oncol")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Oncol")}>❤️</Button>
                   </Col>
                   </Row>             
                 </Accordion.Body>
@@ -476,6 +500,7 @@ export default function App() {
                     su base si quieres volver a la ciudad en el futuro.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas Muñoz Gamero")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza de Armas Muñoz Gamero")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -495,6 +520,7 @@ export default function App() {
                     primera vuelta al mundo. Ideal para sentirse un explorador del siglo XVI.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nao Victoria")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Nao Victoria")}>❤️</Button>
                   </Col>
                   </Row>                 
                 </Accordion.Body>
@@ -514,6 +540,7 @@ export default function App() {
                   familias pioneras, siendo un verdadero museo arquitectónico al aire libre.
                   </Card.Text>
                   <Button variant="outline-secondary" onClick={() => agregarDestino("Cementerio Municipal Sara Braun")}>Quiero ir</Button>
+                  <Button variant="outline-warning" onClick={() => agregarFavorito("Cementerio Municipal Sara Braun")}>❤️</Button>
                   </Col>
                   </Row>
                 </Accordion.Body>
@@ -549,6 +576,17 @@ export default function App() {
         <Col md={8}>
           <Button variant="outline-dark">Confirmar</Button> 
           <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
+        </Col>
+        <Col md={4}>
+          <h4>Lugares Favoritos❤️ :</h4>
+          <p>Favoritos guardados: <strong>{favoritos.length}</strong></p>
+          <ul className="list-group mb-3">
+            {favoritos.map((lugarFavorito, index) => (
+              <li key={index} className="list-group-item">
+                {lugarFavorito}
+              </li>
+            ))}
+          </ul>
         </Col>
       </Row>
       </div>
