@@ -13,6 +13,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
+function Destino({descripcion, precio}){
+
+  return(
+    <div>
+      <Card.Text className="mb-2 text-muted">
+      {descripcion}
+    </Card.Text>
+    <h3>{precio}</h3>
+    </div>   
+  );
+}
+
 export default function App() {
   
   const [busqueda, setBusqueda] = useState('');
@@ -21,6 +33,16 @@ export default function App() {
   
   const lugarExiste = lugaresEnLaPagina.includes(busqueda.toLowerCase().trim());
 
+  const vaciarItinerario = () => {
+    elegirDestino([]);
+  };
+
+  const Eliminiarfavorito = (lugarFavorito) => {
+    mostrarFavoritos(favoritos.filter((favorito) => favorito !== lugarFavorito));
+  }
+
+  const[favoritos, mostrarFavoritos] = useState([]);
+  
   const [destino, elegirDestino] = useState([]);
 
   const agregarDestino = (nuevoLugar) => {
@@ -29,23 +51,20 @@ export default function App() {
     }
   };
 
-  const vaciarItinerario = () => {
-    elegirDestino([]);
-  };
-
-
-  const[favoritos, mostrarFavoritos] = useState([]);
-
   const agregarFavorito = (lugarFavorito) => {
     if (!favoritos.includes(lugarFavorito)) {
       mostrarFavoritos([...favoritos, lugarFavorito]);
+    }
+    if (favoritos.length >= 3) {
+      alert("¡Has alcanzado el límite de favoritos! Por favor, reinicia tu lista.");
+     mostrarFavoritos(favoritos.slice(0, 3)); 
+    
     }
   };
 
   const vaciarFavoritos = () => {
     mostrarFavoritos([]);
   };
-
 
   return (
     <div className="p-5">
@@ -577,25 +596,39 @@ export default function App() {
           </Card.Text>
           <Card.Text> 
           </Card.Text>        
-        </Col>
-        <Col md={8}>
-          <Button variant="outline-dark">Confirmar</Button> 
-          <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
-        </Col>
-        <Col md={6}>
+        </Col>      
+          <Col md={2}>
+          <Row>
+            <Button variant="outline-dark">Confirmar</Button>
+          </Row>
+          <Row>
+            <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
+          </Row>         
+          </Col>        
+        <Card>
+          <Col md={6}>
           <h4>Lugares Favoritos❤️ :</h4>
           <p>Favoritos guardados: <strong>{favoritos.length}</strong></p>
           <ul className="list-group mb-3">
             {favoritos.map((lugarFavorito, index) => (
-              <li key={index} className="list-group-item-warning">
+              <li key={index} className="list-group-item">
+                <Row>
+                <Col>
                 {lugarFavorito}
+                </Col>
+                <Col md={2}>
+                <Button variant="outline-danger" onClick={() => Eliminiarfavorito(lugarFavorito)}>Eliminar</Button> 
+                </Col>
+                </Row>               
               </li>
+               
             ))}
           <Col md={6}>
             <Button variant="outline-danger" onClick={vaciarFavoritos}>Vaciar Favoritos</Button>
           </Col>
           </ul>
         </Col>
+        </Card>      
       </Row>
       </div>
 
