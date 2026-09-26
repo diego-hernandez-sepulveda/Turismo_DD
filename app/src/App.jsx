@@ -586,7 +586,7 @@ export default function App() {
             
             <h4>Itinerario de viaje:</h4>
       
-           <p>Lugares guardados: <strong>{destino.length}</strong></p>
+           <p>Lugares guardados 🚗 : <strong>{destino.length}</strong></p>
          
            <ul id="listaCarrito" className="list-group mb-3">
             {destino.map((lugar, index) => (
