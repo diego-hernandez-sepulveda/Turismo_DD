@@ -69,6 +69,11 @@ export default function App() {
     mostrarFavoritos([]);
   };
 
+  const mostraritinerarioConfirmado = () => {
+      alert("Has confirmado tu itinerario. ¡Disfruta tu viaje!" + "\n" + "lugares guardados: " + (destino.join(", ")));
+    
+  };
+
   return (
     <div className="p-5">
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -603,7 +608,9 @@ export default function App() {
         </Col>      
           <Col md={2}>
           <Row>
-            <Button variant="outline-dark">Confirmar</Button>
+            <Button variant="outline-dark" onClick={mostraritinerarioConfirmado}>
+              Confirmar({destino.length})
+            </Button>
           </Row>
           <Row>
             <Button variant="outline-danger" onClick={vaciarItinerario}>Vaciar Itinerario</Button>
