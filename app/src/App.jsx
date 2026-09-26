@@ -41,6 +41,9 @@ export default function App() {
     mostrarFavoritos(favoritos.filter((favorito) => favorito !== lugarFavorito));
   }
 
+  const EliminarDestino = (lugarDestino) => {
+    elegirDestino(destino.filter((destino) => destino !== lugarDestino));
+  }
   const[favoritos, mostrarFavoritos] = useState([]);
   
   const [destino, elegirDestino] = useState([]);
@@ -588,7 +591,8 @@ export default function App() {
            <ul id="listaCarrito" className="list-group mb-3">
             {destino.map((lugar, index) => (
               <li key={index} className="list-group-item ">
-                {lugar}
+                {lugar} 
+                <Button variant="outline-danger" onClick={() => EliminarDestino(lugar)} className="float-end">Eliminar</Button>
               </li>
             ))}
           </ul>  
