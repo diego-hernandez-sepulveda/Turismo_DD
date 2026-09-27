@@ -78,18 +78,16 @@ export default function App() {
     <div className="p-5">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">Inicio</Navbar.Brand>
+          <Navbar.Brand href="#Inicio">Inicio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Destinos</Nav.Link>
-              <Nav.Link href="#conocenos">Más</Nav.Link>
+              <Nav.Link href="#Destinos">Destinos</Nav.Link>
+              <Nav.Link href="#Itinerarios">Intinerario</Nav.Link>
               <NavDropdown title="Más servicios" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Transporte</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Guías</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Lugares Favoritos</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                <NavDropdown.Item href="#action/Favoritos">Lugares Favoritos</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -99,7 +97,7 @@ export default function App() {
       <div className="mt-4 mb-5">
         <Row className="align-items-center">
           <Col md={6}>
-            <h1>ChileTurist</h1>
+            <h1 id="Inicio">ChileTurist</h1>
             <h3>El mejor servicio turístico de Chile</h3>
           </Col>
           <Col md={7}>
@@ -125,9 +123,9 @@ export default function App() {
         </Row>
       </div>
       
-      <CardGroup>
+      <CardGroup id="Destinos">
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" style={{ border: '8px solid black' }} />
+          <Card.Img variant="top" type="image/webp" src="/Destino Santiago.webp" style={{ border: '8px solid white' }} />
           <Card.Body>
             <Card.Title>Santiago</Card.Title>
             <Card.Text>
@@ -141,7 +139,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Santiago palaciodelamoneda.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -161,7 +159,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Santiago parquebicentenario.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -182,7 +180,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Santiago museonacional.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -202,7 +200,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Santiago cerrosancristobal.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Santiago cerrosancristobal.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -222,7 +220,7 @@ export default function App() {
         </Card>
 
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/webp" src="/Valparaiso.webp" style={{ border: '8px solid black' }}/>
+          <Card.Img variant="top" type="image/webp" src="/Valparaiso.webp" style={{ border: '8px solid white' }}/>
           <Card.Body>
             <Card.Title>Valparaíso</Card.Title>
             <Card.Text>
@@ -237,7 +235,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col> 
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" style={{ border: '4px solid black' }}/>
+                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso plazasotomayor.jpg" style={{ border: '4px solid white' }}/>
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -257,7 +255,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso cerroalegre.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -276,7 +274,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Valparaiso Palaciobaburizza.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -297,7 +295,7 @@ export default function App() {
 
       <CardGroup>
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/jpg" src="/Destino La Serena.jpg" style={{ border: '8px solid black' }} />
+          <Card.Img variant="top" type="image/jpg" src="/Destino La Serena.jpg" style={{ border: '8px solid white' }} />
           <Card.Body>
             <Card.Title>La Serena</Card.Title>
               <Card.Text>
@@ -311,7 +309,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/La Serena elfaro.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/La Serena elfaro.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -331,7 +329,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/La Serena larecova.webp" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/La Serena larecova.webp" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -350,7 +348,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/La Serena jardinjapones.webp" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/La Serena jardinjapones.webp" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -367,7 +365,7 @@ export default function App() {
         </Card>
 
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/jpeg" src="/Destino Pucón.jpeg" style={{ border: '8px solid black' }} />
+          <Card.Img variant="top" type="image/jpeg" src="/Destino Pucón.jpeg" style={{ border: '8px solid white' }} />
           <Card.Body>
             <Card.Title>Pucón</Card.Title>
             <Card.Text>El epicentro indiscutido de la aventura, la naturaleza y la desconexión en el sur de Chile. Custodiado por el imponente e icónico volcán Villarrica, Pucón es un destino vibrante donde la adrenalina y el relajo convergen a la perfección.</Card.Text>
@@ -377,7 +375,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Pucón plazadearmas.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón plazadearmas.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -394,7 +392,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Pucón paqueojosdelcaburgua.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón paqueojosdelcaburgua.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -411,7 +409,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Pucón paquenacionalhuerquehue.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Pucón paquenacionalhuerquehue.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -430,7 +428,7 @@ export default function App() {
 
       <CardGroup>
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/jpg" src="/Valdivia.jpg" style={{ border: '8px solid black' }} />
+          <Card.Img variant="top" type="image/jpg" src="/Valdivia.jpg" style={{ border: '8px solid white' }} />
           <Card.Body>
             <Card.Title>Valdivia</Card.Title>
             <Card.Text>
@@ -446,7 +444,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Valdivia costanera.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Valdivia costanera.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -466,7 +464,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Valdivia museo.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Valdivia museo.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -486,7 +484,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpeg" src="/Valdivia parque.jpeg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpeg" src="/Valdivia parque.jpeg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -507,7 +505,7 @@ export default function App() {
         </Card>
 
         <Card style={{ width: '40rem' }}>
-          <Card.Img variant="top" type="image/jpg" src="/Punta Arenas.jpg" style={{ border: '8px solid black' }} />
+          <Card.Img variant="top" type="image/jpg" src="/Punta Arenas.jpg" style={{ border: '8px solid white' }} />
           <Card.Body>
             <Card.Title>Punta Arenas</Card.Title>
             <Card.Text>
@@ -522,7 +520,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img type="image/jpg" src="/Punta Arenas plazadearmas.jpg" rounded style={{ border: '4px solid black' }} />
+                  <Card.Img type="image/jpg" src="/Punta Arenas plazadearmas.jpg" rounded style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -542,7 +540,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Punta Arenas museo.jpg"style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Punta Arenas museo.jpg"style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -562,7 +560,7 @@ export default function App() {
                 <Accordion.Body>
                   <Row className="align-items-center">
                   <Col>
-                  <Card.Img variant="top" type="image/jpg" src="/Punta Arenas cementerio.jpg" style={{ border: '4px solid black' }} />
+                  <Card.Img variant="top" type="image/jpg" src="/Punta Arenas cementerio.jpg" style={{ border: '4px solid white' }} />
                   </Col>
                   <Col>
                   <Card.Text className="mb-2 text-muted">
@@ -585,7 +583,7 @@ export default function App() {
       <div className="mt-4 mb-5">
       <Row className="align-items-center">
         <Col>
-          <h3>¿Ya sabes a donde ir? </h3>
+          <h3 id="Itinerarios">¿Ya sabes a donde ir? </h3>
           <Card.Text className="mb-1">
             Revisa tu itinerario, puedes hacer los cambios que desees antes de confirmar.
             
@@ -618,7 +616,7 @@ export default function App() {
           </Col>        
         <Card>
           <Col md={6}>
-          <h4>Lugares Favoritos❤️ :</h4>
+          <h4 id="action/Favoritos">Lugares Favoritos❤️ :</h4>
           <p>Favoritos guardados: <strong>{favoritos.length}</strong></p>
           <ul className="list-group mb-3">
             {favoritos.map((lugarFavorito, index) => (
