@@ -42,15 +42,21 @@ export default function App() {
   }
 
   const EliminarDestino = (lugarDestino) => {
-    elegirDestino(destino.filter((destino) => destino !== lugarDestino));
+    elegirDestino(destino.filter((item) => item.nombre !== lugarDestino));
   }
   const[favoritos, mostrarFavoritos] = useState([]);
   
   const [destino, elegirDestino] = useState([]);
 
-  const agregarDestino = (nuevoLugar) => {
-    if (!destino.includes(nuevoLugar)) {
-      elegirDestino([...destino, nuevoLugar]);
+  const agregarDestino = (nuevoLugar, precioLugar ) => {
+    let yaExiste = false;
+    for (let i = 0; i < destino.length; i++) {
+      if (destino[i].nombre === nuevoLugar) {
+        yaExiste = true;
+      }
+    }
+    if (yaExiste === false) {
+      elegirDestino([...destino, { nombre: nuevoLugar, precio: precioLugar }]);
     }
   };
 
@@ -70,9 +76,15 @@ export default function App() {
   };
 
   const mostraritinerarioConfirmado = () => {
-      alert("Has confirmado tu itinerario. ¡Disfruta tu viaje!" + "\n" + "lugares guardados: " + (destino.join(", ")));
+    let nombres = destino.map( (item) => item.nombre);
+      alert("Has confirmado tu itinerario. ¡Disfruta tu viaje!" + "\n" + "lugares guardados: " + (nombres.join(", ")) + "\n" + "Monto total pagado: CLP " + totalPagar);
     
   };
+
+  let totalPagar = 0;
+  for (let i = 0; i < destino.length; i++) {
+    totalPagar = totalPagar + destino[i].precio;
+  }
 
   return (
     <div className="p-5">
@@ -148,7 +160,7 @@ export default function App() {
                     También alberga la Secretaría General de la Presidencia y a la Secretaría General 
                     de Gobierno.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio de La Moneda")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio de La Moneda", 15000)}>Quiero ir (CLP 15.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Palacio de La Moneda")}>❤️</Button>
                   </Col>
                   </Row>
@@ -169,7 +181,7 @@ export default function App() {
                     un espacio cultural con esculturas de destacados artistas nacionales, juegos infantiles 
                     y senderos con miradores para disfrutar al aire libre.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Bicentenario de Vitacura")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Bicentenario de Vitacura", 20000)}>Quiero ir (CLP 20.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Bicentenario de Vitacura")}>❤️</Button>
                   </Col>
                   </Row>
@@ -189,7 +201,7 @@ export default function App() {
                     en aquel entonces se le conocía como el Museo Nacional de Pinturas, es el primer 
                     museo de arte en Latinoamérica.​
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nacional de Bellas Artes")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nacional de Bellas Artes", 25000)}>Quiero ir (CLP 25.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Nacional de Bellas Artes")}>❤️</Button>
                   </Col>
                   </Row>
@@ -209,7 +221,7 @@ export default function App() {
                     pueden encontrar áreas recreativas, paseo en funicular, el zoológico nacional de 
                     Santiago y su mayor atractivo, el santuario de la Virgen.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro San Cristóbal")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro San Cristóbal", 30000)}>Quiero ir (CLP 30.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Cerro San Cristóbal")}>❤️</Button>
                   </Col>
                   </Row>
@@ -244,7 +256,7 @@ export default function App() {
                     los Héroes de Iquique y funciona como el umbral directo al movimiento portuario del 
                     Muelle Prat. 
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza Sotomayor")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza Sotomayor", 15000)}>Quiero ir (CLP 15.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza Sotomayor")}>❤️</Button>
                   </Col>
                   </Row>            
@@ -263,7 +275,7 @@ export default function App() {
                     influencia europea del siglo XIX, cafés de especialidad, galerías de arte, pasajes 
                     adoquinados y murales en cada esquina con vistas privilegiadas a la bahía.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro Alegre")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cerro Alegre", 25000)}>Quiero ir (CLP 25.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Cerro Alegre")}>❤️</Button>
                   </Col>
                   </Row> 
@@ -282,7 +294,7 @@ export default function App() {
                     Yugoslavo), hoy sede del Museo Municipal de Bellas Artes. Destaca tanto por su 
                     arquitectura y torre mirador como por su valiosa colección de pintura chilena y europea.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio Baburizza")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Palacio Baburizza", 35000)}>Quiero ir (CLP 35.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Palacio Baburizza")}>❤️</Button>
                   </Col>
                   </Row>
@@ -318,7 +330,7 @@ export default function App() {
                     público de la ciudad, siendo uno de los lugares turísticos más representativos y 
                     concurridos de la zona.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Faro La Serena")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Faro La Serena", 40000)}>Quiero ir (CLP 40.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Faro La Serena")}>❤️</Button>
                   </Col>
                   </Row>
@@ -337,7 +349,7 @@ export default function App() {
                   fundado en 1758, este lugar alberga todo tipo de productos locales, desde joyería y cerámica
                   hasta gastronomía típica.
                   </Card.Text>
-                  <Button variant="outline-secondary"  onClick={() => agregarDestino("La Recova")}>Quiero ir</Button>
+                  <Button variant="outline-secondary"  onClick={() => agregarDestino("La Recova", 30000)}>Quiero ir (CLP 30.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("La Recova")}>❤️</Button>
                   </Col>
                   </Row> 
@@ -354,7 +366,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Un oasis de paz y contemplación en pleno corazón de la ciudad. Este parque temático ofrece un paisaje armónico con senderos, lagunas con carpas koi y puentes tradicionales.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Jardín Japonés La Serena")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Jardín Japonés La Serena", 35000)}>Quiero ir (CLP 35.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Jardín Japonés La Serena")}>❤️</Button>
                   </Col>
                   </Row>
@@ -381,7 +393,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Es un verdadero jardín botánico urbano. Destaca por su cuidado paisajismo, enormes árboles que ofrecen una sombra perfecta en verano, coloridas flores y hermosas esculturas talladas en madera nativa que le dan ese inconfundible toque sureño.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas de Pucón")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas de Pucón", 20000)}>Quiero ir (CLP 20.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza de Armas de Pucón")}>❤️</Button>
                   </Col>
                   </Row>
@@ -398,7 +410,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Un espectáculo visual fascinante. Lo más impresionante es el color turquesa intenso y vibrante de sus pozones y cascadas, un tono hipnótico que resalta entre la espesura del bosque húmedo que lo rodea. Es un lugar excelente para ir en bicicleta desde Pucón, hacer un picnic en los alrededores y simplemente escuchar el sonido relajante de la corriente.
                   </Card.Text>
-                  <Button variant="outline-secondary"  onClick={() => agregarDestino("Parque Ojos del Caburgua")}>Quiero ir</Button>
+                  <Button variant="outline-secondary"  onClick={() => agregarDestino("Parque Ojos del Caburgua", 45000)}>Quiero ir (CLP 45.000) </Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Ojos del Caburgua")}>❤️</Button>
                   </Col>
                   </Row>
@@ -415,7 +427,7 @@ export default function App() {
                   <Card.Text className="mb-2 text-muted">
                     Es el paraíso definitivo para el trekking.Su paisaje de alta montaña es sobrecogedor. A medida que subes, el bosque se transforma hasta revelarte milenarias araucarias. También puedes acampar en el sector del lago Tinquilco y desconectarte por completo del mundo.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Nacional Huerquehue")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Nacional Huerquehue", 50000)}>Quiero ir (CLP 50.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Nacional Huerquehue")}>❤️</Button>
                   </Col>
                   </Row>
@@ -453,7 +465,7 @@ export default function App() {
                    Aquí encontrarás el colorido y tradicional Mercado Fluvial, resguardado por los icónicos 
                    lobos marinos que descansan al sol.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Costanera de Valdivia")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Costanera de Valdivia", 15000)}>Quiero ir (CLP 15.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Costanera de Valdivia")}>❤️</Button>
                   </Col>
                   </Row>
@@ -473,7 +485,7 @@ export default function App() {
                    historia de la región, abarcando desde el profundo legado de las culturas mapuche y 
                    huilliche hasta el impacto de la colonización europea.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Histórico y Antropológico Maurice van de Maele")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Histórico y Antropológico Maurice van de Maele", 25000)}>Quiero ir (CLP 25.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Histórico y Antropológico Maurice van de Maele")}>❤️</Button>
                   </Col>
                   </Row>
@@ -494,7 +506,7 @@ export default function App() {
                   puede contemplar el Océano Pacífico y, en días despejados, la línea de los volcanes de los 
                   Andes.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Oncol")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Parque Oncol", 30000)}>Quiero ir (CLP 30.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Parque Oncol")}>❤️</Button>
                   </Col>
                   </Row>             
@@ -529,7 +541,7 @@ export default function App() {
                     de Magallanes; la leyenda local asegura que debes tocar el dedo del indígena Aónikenk en 
                     su base si quieres volver a la ciudad en el futuro.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas Muñoz Gamero")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Plaza de Armas Muñoz Gamero", 25000)}>Quiero ir (CLP 25.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Plaza de Armas Muñoz Gamero")}>❤️</Button>
                   </Col>
                   </Row>
@@ -549,7 +561,7 @@ export default function App() {
                     destacando la Nao Victoria, la nave de la expedición de Magallanes que logró completar la 
                     primera vuelta al mundo. Ideal para sentirse un explorador del siglo XVI.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nao Victoria")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Museo Nao Victoria", 35000)}>Quiero ir (CLP 35.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Museo Nao Victoria")}>❤️</Button>
                   </Col>
                   </Row>                 
@@ -569,7 +581,7 @@ export default function App() {
                   bordeados de cipreses europeos perfectamente podados y los fastuosos mausoleos de las 
                   familias pioneras, siendo un verdadero museo arquitectónico al aire libre.
                   </Card.Text>
-                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cementerio Municipal Sara Braun")}>Quiero ir</Button>
+                  <Button variant="outline-secondary" onClick={() => agregarDestino("Cementerio Municipal Sara Braun", 40000)}>Quiero ir (CLP 40.000)</Button>
                   <Button variant="outline-warning" onClick={() => agregarFavorito("Cementerio Municipal Sara Braun")}>❤️</Button>
                   </Col>
                   </Row>
@@ -594,11 +606,12 @@ export default function App() {
            <ul id="listaCarrito" className="list-group mb-3">
             {destino.map((lugar, index) => (
               <li key={index} className="list-group-item ">
-                {lugar} 
-                <Button variant="outline-danger" onClick={() => EliminarDestino(lugar)} className="float-end">Eliminar</Button>
+                <strong>{lugar.nombre}</strong> <span className="text.success"> (CLP {lugar.precio})</span>
+                <Button variant="outline-danger" onClick={() => EliminarDestino(lugar.nombre)} className="float-end">Eliminar</Button>
               </li>
             ))}
           </ul>  
+          <h4 className="text-success mb-3">Total a pagar: CLP {totalPagar}</h4>
          
           </Card.Text>
           <Card.Text> 
