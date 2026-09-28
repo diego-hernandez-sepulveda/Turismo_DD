@@ -1,0 +1,97 @@
+export const destinosDisponibles = [
+  {
+    id: 'cur-101',
+    nombre: 'Palacio de La Moneda',
+    precio: 15.000,    
+  },
+  {
+    id: 'cur-102',
+    nombre: 'Parque Bicentenario de Vitacura',
+    precio: 20.000,
+  },
+  {
+    id: 'cur-103',
+    nombre: 'Museo Nacional de Bellas Artes',
+    precio: 25.000,
+  },
+  {
+    id: 'cur-103',
+    nombre: 'Cerro San Cristóbal',
+    precio: 30.000,
+  },
+  {
+    id: 'cur-103',
+    nombre: 'Plaza Sotomayor',
+    precio: 15.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Cerro Alegre',
+    precio: 25.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Palacio Baburizza',
+    precio: 35.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Faro La Serena',
+    precio: 40.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'La Recova',
+    precio: 30.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Jardín Japonés La Serena',
+    precio: 35.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Plaza de Aramas de Pucón',
+    precio: 20.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Parque Ojos del Caburgua',
+    precio: 45.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Parque Nacional Huerquehue',
+    precio: 50.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Costanera de Valdivia',
+    precio: 15.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Museo Nao Victoria',
+    precio: 35.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Museo Histórico y Antropologico Maurice van de Maele',
+    precio: 25.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Parque Oncol',
+    precio: 30.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Plaza de Armas Muñoz Gamero',
+    precio: 25.000,
+  },
+    {
+    id: 'cur-103',
+    nombre: 'Cementerio Municipal Sara Braun',
+    precio: 40.000,
+  },
+]

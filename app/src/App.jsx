@@ -12,19 +12,6 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-function Destino({descripcion, precio}){
-
-  return(
-    <div>
-      <Card.Text className="mb-2 text-muted">
-      {descripcion}
-    </Card.Text>
-    <h3>{precio}</h3>
-    </div>   
-  );
-}
-
 export default function App() {
   
   const [busqueda, setBusqueda] = useState('');
@@ -76,10 +63,16 @@ export default function App() {
   };
 
   const mostraritinerarioConfirmado = () => {
+
+    if (destino.length === 0) {
+      alert("No has agregado ningún destino a tu itinerario. Por favor, selecciona al menos un destino antes de confirmar.");
+      return;
+    }
     let nombres = destino.map( (item) => item.nombre);
       alert("Has confirmado tu itinerario. ¡Disfruta tu viaje!" + "\n" + "lugares guardados: " + (nombres.join(", ")) + "\n" + "Monto total pagado: CLP " + totalPagar);
     
   };
+ 
 
   let totalPagar = 0;
   for (let i = 0; i < destino.length; i++) {
