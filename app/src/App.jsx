@@ -15,7 +15,13 @@ export default function App() {
   
   const [busqueda, setBusqueda] = useState('');
   
-  const lugaresEnLaPagina = ['santiago', 'valparaíso', 'valparaiso', 'valdivia', 'punta arenas', 'palacio de la moneda', 'parque bicentenario de vitacura', 'museo nacional de bellas artes', 'cerro san cristóbal', 'plaza sotomayor', 'cerro alegre', 'palacio baburizza', 'costanera de valdivia', 'museo historico y antropologico maurice van de maele', 'parque oncol', 'plaza de armas muñoz gamero', 'museo nao victoria', 'cementerio municipal sara braun'];
+  const lugaresEnLaPagina = ['santiago', 'valparaíso','la serena', 'pucón', 'valparaiso',
+    'valdivia', 'punta arenas', 'palacio de la moneda', 'parque bicentenario de vitacura', 
+    'museo nacional de bellas artes', 'cerro san cristóbal', 'plaza sotomayor', 'cerro alegre', 
+    'faro la serena', 'la recova', 'jardín japonés la serena', 'plaza de armas pucón', 'parque ojos del caburgua', 
+    'parque nacional huerquehue', 'palacio baburizza', 'costanera de valdivia', 
+    'museo historico y antropologico maurice van de maele', 'parque oncol', 'plaza de armas muñoz gamero', 
+    'museo nao victoria', 'cementerio municipal sara braun'];
   
   const lugarExiste = lugaresEnLaPagina.includes(busqueda.toLowerCase().trim());
 
