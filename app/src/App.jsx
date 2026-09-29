@@ -585,9 +585,9 @@ export default function App() {
         </Card>
       </CardGroup>
       
-      <div className="mt-4 mb-5">
+      <div className="mt-5 mb-5 bg-light p-4 rounded shadow-sm">
       <Row className="align-items-center">
-        <Col>
+        <Col md={9}>
           <h3 id="Itinerarios">¿Ya sabes a donde ir? </h3>
           <Card.Text className="mb-1">
             Revisa tu itinerario, puedes hacer los cambios que desees antes de confirmar.
@@ -607,13 +607,13 @@ export default function App() {
           <h4 className="text-success mb-3">Total a pagar: CLP {totalPagar}</h4>
          
           </Card.Text>
-          <Card.Text> 
-          </Card.Text>        
+           
+                
         </Col>      
           <Col md={2}>
           <Row>
             <Button variant="outline-dark" onClick={mostraritinerarioConfirmado}>
-              Confirmar({destino.length})
+              Confirmar Viaje({destino.length})
             </Button>
           </Row>
           <Row>
